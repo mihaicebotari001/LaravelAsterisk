@@ -20,13 +20,13 @@ class Base
     private function initialize()
     {
 
-        config([
-            'project_columns' => ['projects.id', 'projects.name', 'projects.slug', 'users.id as owner_id', 'users.name as owner', 'projects.created_at', 'projects.updated_at']
-        ]);
-
-        config([
-            'task_columns' => ['tasks.id', 'tasks.name', 'tasks.slug', 'users.id as author_id', 'users.name as author', 'tasks.completed', 'tasks.description', 'tasks.created_at', 'tasks.updated_at']
-        ]);
+//        config([
+//            'project_columns' => ['projects.id', 'projects.name', 'projects.slug', 'users.id as owner_id', 'users.name as owner', 'projects.created_at', 'projects.updated_at']
+//        ]);
+//
+//        config([
+//            'task_columns' => ['tasks.id', 'tasks.name', 'tasks.slug', 'users.id as author_id', 'users.name as author', 'tasks.completed', 'tasks.description', 'tasks.created_at', 'tasks.updated_at']
+//        ]);
     }
 
 
