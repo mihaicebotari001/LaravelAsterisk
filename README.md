@@ -1,4 +1,4 @@
-# LaravelAsterisk
+# laravel-asterisk
 A simple call using Asterisk for Laravel
   - Simple and extensible
   - Method chaining
