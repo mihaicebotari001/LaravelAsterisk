@@ -1,4 +1,4 @@
-##Impliments in Theme:
+##Implements in Theme:
 required axiox
 ````
 npm i

@@ -6,16 +6,16 @@
  * Time: 4:20 PM
  */
 
-namespace traian321\TaskManager\Console;
+namespace mihaicebotari\laravelasterisk\Console;
 
 
 use Illuminate\Console\Command;
 
 class ProcessCommand extends Command
 {
-    protected $signature = 'taskmanager:process';
+    protected $signature = 'laravel-asterisk:process';
 
-    protected $description = 'TaskManager check and processing!';
+    protected $description = 'Laravel Asterisk check and processing!';
 
     public function handle(){
         dd("task ok ");

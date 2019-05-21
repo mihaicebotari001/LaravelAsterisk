@@ -28,13 +28,13 @@
 
     "autoload": {
         "psr-4":{
-            "Mihai\\laravel-asterisk\\": "src/"
+            "mihaicebotari001\\laravel-asterisk\\": "src/"
         }
     },
 
     "autoload-dev": {
         "psr-4":{
-            "Mihai\\laravel-asterisk\\Tests\\": "tests/"
+            "mihaicebotari001\\laravel-asterisk\\Tests\\": "tests/"
         }
     }
 }
