@@ -1,0 +1,40 @@
+{
+    "name": "mihaicebotari001/laravel-asterisk",
+    "description": "Laravel Asterisk",
+    "version":"1.0.0",
+    "type": "library",
+    "keywords": [
+        "php",
+        "mihaicebotari001",
+        "laravel",
+        "todo",
+        "vue",
+        "asterisk",
+        "telephony",
+        "calls"
+    ],
+    "authors": [
+        {
+            "name": "Mihai",
+            "email": "mihaicebotari001@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0",
+        "phpunit/phpunit": "*",
+        "illuminate/support": "~5.0"
+    },
+
+    "autoload": {
+        "psr-4":{
+            "Mihai\\laravel-asterisk\\": "src/"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4":{
+            "Mihai\\laravel-asterisk\\Tests\\": "tests/"
+        }
+    }
+}
