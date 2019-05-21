@@ -1,11 +1,11 @@
 <?php
 
 Route::group([
-    'namespace' => 'mihaicebotari001\laravel-asterisk\Http\Controllers',
-    'prefix' => config('TaskManager.prefix'),
+    'namespace' => 'mihaicebotari001\laravelasterisk\Http\Controllers',
+    'prefix' => config('LaravelAsterisk.prefix'),
     'middleware' => ['web', 'auth']
 ],
     function(){
-//        Route::get('asterisk/list/view', 'BaseController@index')->name('taskmanagerView');
+//        Route::get('laravelasterisk/list/view', 'BaseController@index')->name('laravelasteriskView');
     }
 );

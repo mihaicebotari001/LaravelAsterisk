@@ -6,7 +6,7 @@
  * Time: 1:56 PM
  */
 
-namespace TRAY\TaskManager\Tests;
+namespace Mihai\LaravelAsterisk\Tests;
 //namespace Tests\Feature;
 
 

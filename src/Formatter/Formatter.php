@@ -1,5 +1,5 @@
 <?php
-namespace traian321\TaskManager\Formatter;
+namespace mihaicebotari001\LaravelAsterisk\Formatter;
 use Config;
 
 class Formatter
@@ -9,7 +9,7 @@ class Formatter
     
     public function __construct($_data){
         $this->_data = $_data;
-        $this->config = Config::get('taskmanager');
+        $this->config = Config::get('laravelasterisk');
         
     }
     
@@ -24,13 +24,13 @@ class Formatter
     public function asList(){
         if(isset($this->_data->projects)){
             $type = 'p';
-            $format_placeholder = Config::get('taskmanager.list_project_format');
+            $format_placeholder = Config::get('laravelasterisk.list_project_format');
             foreach($this->_data->projects as $project){
                 echo $this->replace($type, $project, $format_placeholder);
             }     
         }else{
             $type = 't';
-            $format_placeholder = Config::get('taskmanager.list_tasks_format');
+            $format_placeholder = Config::get('laravelasterisk.list_tasks_format');
             foreach($this->_data->tasks as $task){
                 echo $this->replace($type, $task, $format_placeholder);
             }     

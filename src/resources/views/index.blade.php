@@ -1,19 +1,19 @@
-@extends(config('TaskManager.extendsView'))
+@extends(config('LaravelAsterisk.extendsView'))
 
-@section(config('TaskManager.titleView'))
-    TaskManager
+@section(config('LaravelAsterisk.titleView'))
+    LaravelAsterisk
 @endsection
 
-@section(config('TaskManager.contentView'))
-    TaskManager content
-    <div id="taskmanager">
-        <taskmanager prefix="{{ config('TaskManager.prefix') }}"></taskmanager>
+@section(config('LaravelAsterisk.contentView'))
+    LaravelAsterisk content
+    <div id="laravelasterisk">
+        <laravelasterisk prefix="{{ config('LaravelAsterisk.prefix') }}"></laravelasterisk>
     </div>
 @endsection
 
 
-@push(config('TaskManager.cssView'))
+@push(config('LaravelAsterisk.cssView'))
 @endpush
 
-@push(config('TaskManager.jsView'))
+@push(config('LaravelAsterisk.jsView'))
 @endpush

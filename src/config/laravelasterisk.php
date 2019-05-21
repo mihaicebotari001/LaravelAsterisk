@@ -7,8 +7,8 @@ return array(
      * Default formatting, list format and table format.
      * 
      */
-    'title' => 'TaskManager',
-    'butTitle' => 'TaskManager',
+    'title' => 'LaravelAsterisk',
+    'butTitle' => 'LaravelAsterisk',
     'butIcon' => '<i class="fas fa-tasks"></i>',
     'prefix' => 'admin',
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace traian321\TaskManager\Laravel;
+namespace mihaicebotari001\LaravelAsterisk\Laravel;
 
 use Illuminate\Support\ServiceProvider;
-use traian321\TaskManager\config\taskmanager;
+use mihaicebotari001\LaravelAsterisk\config\laravelasterisk;
 use Config;
-use traian321\TaskManager\Console\ProcessCommand;
+use mihaicebotari001\LaravelAsterisk\Console\ProcessCommand;
 
-class TaskManagerServiceProvider extends ServiceProvider
+class LaravelAsteriskServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -18,16 +18,16 @@ class TaskManagerServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__. '/../routes/routes.php');
-        $this->loadViewsFrom(__DIR__. '/../resources/views', 'TaskManager');
-        $this->mergeConfigFrom(__DIR__. '/../config/taskmanager.php', 'TaskManager');
+        $this->loadViewsFrom(__DIR__. '/../resources/views', 'LaravelAsterisk');
+        $this->mergeConfigFrom(__DIR__. '/../config/laravelasterisk.php', 'LaravelAsterisk');
 
         $this->publishes([
-            __DIR__. '/../config/taskmanager.php' => config_path('TaskManager.php'),
+            __DIR__. '/../config/laravelasterisk.php' => config_path('LaravelAsterisk.php'),
         ]);
 
         $this->publishes([
-            __DIR__ . '/../resources/js/components/TaskManager.vue' => config_path() . '/../resources/js/components/TaskManager.vue',
-        ], 'taskmanager-vue-component');
+            __DIR__ . '/../resources/js/components/LaravelAsterisk.vue' => config_path() . '/../resources/js/components/LaravelAsterisk.vue',
+        ], 'laravelasterisk-vue-component');
     }
 
     /**

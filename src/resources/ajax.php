@@ -15,7 +15,7 @@ function change(type, id, url) {
 
 function remove(type, id) {
     
-    var d = document.getElementById('taskmanager_'+type+id);
+    var d = document.getElementById('laravelasterisk'+type+id);
     d.outerHTML = '';
 }
 

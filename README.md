@@ -1,10 +1,10 @@
-# laravel-asterisk
+# laravelasterisk
 A simple call using Asterisk for Laravel
   - Simple and extensible
   - Method chaining
   - Formatter (alpha)
 
-laravel-asterisk is a Laravel package which allows you to make calls. The package is in **development stage** for time being, and not ready for production uses.
+laravelasterisk is a Laravel package which allows you to make calls. The package is in **development stage** for time being, and not ready for production uses.
 
 ----
 
@@ -25,14 +25,14 @@ Download the package as a zip, and then put it on /vendor folder.
 Add the following line on your **composer.json** file, under the psr-4:
 
 ```
-composer require mihaicebotari001/laravel-asterisk
+composer require mihaicebotari001/laravelasterisk
 ```
 
 
 ```
 "psr-4": {
     ...
-    "mihaicebotari001\\laravel-asterisk\\": "vendor/mihaicebotari001/laravel-asterisk/src"
+    "mihaicebotari001\\laravelasterisk\\": "vendor/mihaicebotari001/laravelasterisk/src"
 }
 ```
 
@@ -48,7 +48,7 @@ And in the same file, put the LaravelAsterisk alias under the **aliases** array:
 
 And finally, run all the migration files
 ```sh
-php artisan migrate --path=vendor/mihaicebotari001/laravel-asterisk/src/database/migrations
+php artisan migrate --path=vendor/mihaicebotari001/laravelasterisk/src/database/migrations
 ```
 
 ----

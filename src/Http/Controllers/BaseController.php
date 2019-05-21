@@ -6,7 +6,7 @@
  * Time: 3:17 PM
  */
 
-namespace traian321\TaskManager\Http\Controllers;
+namespace mihaicebotari001\LaravelAsterisk\Http\Controllers;
 
 
 use Illuminate\Routing\Controller;
@@ -14,7 +14,7 @@ use Illuminate\Routing\Controller;
 class BaseController extends Controller
 {
     public function index(){
-        return view('TaskManager::index');
+        return view('LaravelAsterisk::index');
     }
 
 }

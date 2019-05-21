@@ -9,8 +9,8 @@ npm install vue-js-modal --save
 ````
 php artisan vendor:publish
 ````
-+ taskmanager-config
-+ taskmanager-vue-component
++ laravelasterisk-config
++ laravelasterisk-vue-component
     
 
 1. Add in menu:
@@ -18,9 +18,9 @@ php artisan vendor:publish
 <li class="m-menu__item " aria-haspopup="true">
     <a  href="{{ route('taskmanagerView') }}" class="m-menu__link">
         <span class="m-menu__item-here"></span>
-        {!! config('TaskManager.butIcon')  !!}
+        {!! config('LaravelAsterisk.butIcon')  !!}
         <span class="m-menu__link-text">
-            {{ config('TaskManager.butTitle') }}
+            {{ config('LaravelAsterisk.butTitle') }}
         </span>
     </a>
 </li>
@@ -28,7 +28,7 @@ php artisan vendor:publish
 
 2. Include Vue component in app.js
 ````
-    Vue.component('taskmanager', require('./components/TaskManager.vue').default);
+    Vue.component('taskmanager', require('./components/LaravelAsterisk.vue').default);
 ````
 
 3. Include your app.js file in layouts & add id="app" in main div

@@ -1,5 +1,5 @@
 {
-    "name": "mihaicebotari001/laravel-asterisk",
+    "name": "mihaicebotari001/laravelasterisk",
     "description": "Laravel Asterisk",
     "version":"1.0.0",
     "type": "library",
@@ -28,13 +28,13 @@
 
     "autoload": {
         "psr-4":{
-            "mihaicebotari001\\laravel-asterisk\\": "src/"
+            "mihaicebotari001\\laravelasterisk\\": "src/"
         }
     },
 
     "autoload-dev": {
         "psr-4":{
-            "mihaicebotari001\\laravel-asterisk\\Tests\\": "tests/"
+            "mihaicebotari001\\laravelasterisk\\Tests\\": "tests/"
         }
     }
 }

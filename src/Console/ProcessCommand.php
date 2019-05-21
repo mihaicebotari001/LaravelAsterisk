@@ -13,7 +13,7 @@ use Illuminate\Console\Command;
 
 class ProcessCommand extends Command
 {
-    protected $signature = 'laravel-asterisk:process';
+    protected $signature = 'laravelasterisk:process';
 
     protected $description = 'Laravel Asterisk check and processing!';
 

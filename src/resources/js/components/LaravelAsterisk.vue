@@ -133,7 +133,7 @@
         },
 
         mounted() {
-            console.log('TaskManager mounted by TRAY.');
+            console.log('LaravelAsterisk mounted by Mihai.');
         }
     }
 </script>
