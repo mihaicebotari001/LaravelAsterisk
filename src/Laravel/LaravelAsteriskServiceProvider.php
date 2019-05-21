@@ -17,17 +17,17 @@ class LaravelAsteriskServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__. '/../routes/routes.php');
-        $this->loadViewsFrom(__DIR__. '/../resources/views', 'LaravelAsterisk');
-        $this->mergeConfigFrom(__DIR__. '/../config/laravelasterisk.php', 'LaravelAsterisk');
+//        $this->loadRoutesFrom(__DIR__. '/../routes/routes.php');
+//        $this->loadViewsFrom(__DIR__. '/../resources/views', 'LaravelAsterisk');
+//        $this->mergeConfigFrom(__DIR__. '/../config/laravelasterisk.php', 'LaravelAsterisk');
 
-        $this->publishes([
-            __DIR__. '/../config/laravelasterisk.php' => config_path('LaravelAsterisk.php'),
-        ]);
-
-        $this->publishes([
-            __DIR__ . '/../resources/js/components/LaravelAsterisk.vue' => config_path() . '/../resources/js/components/LaravelAsterisk.vue',
-        ], 'laravelasterisk-vue-component');
+//        $this->publishes([
+//            __DIR__. '/../config/laravelasterisk.php' => config_path('LaravelAsterisk.php'),
+//        ]);
+//
+//        $this->publishes([
+//            __DIR__ . '/../resources/js/components/LaravelAsterisk.vue' => config_path() . '/../resources/js/components/LaravelAsterisk.vue',
+//        ], 'laravelasterisk-vue-component');
     }
 
     /**

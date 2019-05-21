@@ -16,7 +16,7 @@ php artisan vendor:publish
 1. Add in menu:
 ````
 <li class="m-menu__item " aria-haspopup="true">
-    <a  href="{{ route('taskmanagerView') }}" class="m-menu__link">
+    <a  href="{{ route('laravelasteriskView') }}" class="m-menu__link">
         <span class="m-menu__item-here"></span>
         {!! config('LaravelAsterisk.butIcon')  !!}
         <span class="m-menu__link-text">
@@ -28,7 +28,7 @@ php artisan vendor:publish
 
 2. Include Vue component in app.js
 ````
-    Vue.component('taskmanager', require('./components/LaravelAsterisk.vue').default);
+    Vue.component('laravelasterisk', require('./components/LaravelAsterisk.vue').default);
 ````
 
 3. Include your app.js file in layouts & add id="app" in main div

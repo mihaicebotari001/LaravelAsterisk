@@ -106,13 +106,13 @@
 
         methods:{
             getProjects(){
-                axios.get(this.webUrl + '/taskmanager/list/projects').then((response) => {
+                axios.get(this.webUrl + '/laravelasterisk/list/projects').then((response) => {
                     this.projects = response.data.projects;
                 });
             },
 
             getProjectTasks(project_id){
-                axios.get(this.webUrl + '/taskmanager/list/tasks/' + project_id).then((response) => {
+                axios.get(this.webUrl + '/laravelasterisk/list/tasks/' + project_id).then((response) => {
                     this.todo = response.data.tasks;
                 });
             },
