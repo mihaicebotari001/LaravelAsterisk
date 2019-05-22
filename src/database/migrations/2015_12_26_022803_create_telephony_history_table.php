@@ -15,7 +15,7 @@ class CreateTelephonyHistoryTable extends Migration {
 		Schema::create('telephony_history', function(Blueprint $table)
 		{
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('user_id');
+            $table->bigInteger('user_id')->unsigned();
             $table->enum('status', ['ANSWER', 'BUSY', 'NO ANSWER', 'CANCEL', 'CONGESTION', 'CHANUNAVAIL', 'DONTCALL', 'TORTURE', 'INVALIDARGS'])->default('ANSWER');
 			$table->string('called_phone')->nullable();
 			$table->timestamps();
@@ -32,7 +32,7 @@ class CreateTelephonyHistoryTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('telephony_history');
+        Schema::dropIfExists('telephony_history');
 	}
 
 }

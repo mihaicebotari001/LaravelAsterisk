@@ -15,7 +15,7 @@ class CreateTelephonyCredentialsTable extends Migration {
 		Schema::create('telephony_credentials', function(Blueprint $table)
 		{
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('user_id');
+            $table->bigInteger('user_id')->unsigned();
 			$table->string('host')->nullable();
 			$table->string('username')->nullable();
 			$table->string('secret')->nullable();
@@ -36,7 +36,7 @@ class CreateTelephonyCredentialsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('telephony_credentials');
+        Schema::dropIfExists('telephony_credentials');
 	}
 
 }
