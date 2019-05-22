@@ -5,7 +5,6 @@ namespace mihaicebotari001\LaravelAsterisk\Laravel;
 use Illuminate\Support\ServiceProvider;
 use mihaicebotari001\LaravelAsterisk\config\laravelasterisk;
 use Config;
-use mihaicebotari001\LaravelAsterisk\Console\ProcessCommand;
 
 class LaravelAsteriskServiceProvider extends ServiceProvider
 {
