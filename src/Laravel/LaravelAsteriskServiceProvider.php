@@ -40,9 +40,6 @@ class LaravelAsteriskServiceProvider extends ServiceProvider
         /**
          * Register commands
          */
-        $this->commands([
-            ProcessCommand::class
-        ]);
     }
 
     /**
