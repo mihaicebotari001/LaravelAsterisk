@@ -14,8 +14,8 @@ class CreateTelephonyCredentialsTable extends Migration {
 	{
 		Schema::create('telephony_credentials', function(Blueprint $table)
 		{
-            $table->bigIncrements('id');
-            $table->unsignedBigInteger('user_id');
+			$table->increments('id');
+            $table->integer('user_id')->unsigned()->default(0)->index('telephony_credentials_user_id_foreign');
 			$table->string('host')->nullable();
 			$table->string('username')->nullable();
 			$table->string('secret')->nullable();
@@ -23,8 +23,6 @@ class CreateTelephonyCredentialsTable extends Migration {
 			$table->string('account_code')->nullable();
             $table->enum('connection_type', ['SIP', 'IAX'])->default('SIP');
 			$table->timestamps();
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 		});
 	}
 
