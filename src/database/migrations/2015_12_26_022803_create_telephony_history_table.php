@@ -17,7 +17,8 @@ class CreateTelephonyHistoryTable extends Migration {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
             $table->enum('status', ['ANSWER', 'BUSY', 'NO ANSWER', 'CANCEL', 'CONGESTION', 'CHANUNAVAIL', 'DONTCALL', 'TORTURE', 'INVALIDARGS'])->default('ANSWER');
-			$table->string('called_phone')->nullable();
+			$table->string('called_phone');
+			$table->text('comments')->nullable();
 			$table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
